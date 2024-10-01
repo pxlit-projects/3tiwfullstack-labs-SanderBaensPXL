@@ -57,7 +57,7 @@ public class EmployeeService implements IEmployeeService{
 
     @Override
     public List<EmployeeResponse> findByOrganization(Long organizationId) {
-        List<Employee> employees = employeeRepository.findAllByDepartmentId(organizationId);
+        List<Employee> employees = employeeRepository.findAllByOrganizationId(organizationId);
         return employees.stream().map(this::mapToEmployeeResponse).toList();
     }
 }
