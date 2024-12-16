@@ -1,7 +1,9 @@
 package be.pxl.services.controller;
 
+import be.pxl.services.client.NotificationClient;
 import be.pxl.services.controller.dto.EmployeeRequest;
 import be.pxl.services.controller.dto.EmployeeResponse;
+import be.pxl.services.model.NotificationRequest;
 import be.pxl.services.services.EmployeeService;
 import be.pxl.services.services.IEmployeeService;
 import lombok.RequiredArgsConstructor;
